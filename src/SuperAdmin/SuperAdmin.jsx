@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { default as AdminNavbar } from "../Admin/AdminNavbar";
-import RestaurantPaymentTable from "./Payments/RestaurantPaymentTable";
+import RestaurantPaymentTable from "./RestaurantPaymentTable";
 import RestaurantRequest from "./RestaurantRequest/RestaurantRequest";
 import SuperAdminRestaurant from "./Restaurants/SuperAdminRestaurant";
 import Customers from "./SuperAdminCustomerTable/Customers";
