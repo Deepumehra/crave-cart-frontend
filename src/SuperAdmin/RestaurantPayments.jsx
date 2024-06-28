@@ -13,7 +13,7 @@ import {
   Typography
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { api } from "../../config/api";
+import { api } from "../config/api";
 
 // Fetch orders from the API
 async function getAllPayments() {
