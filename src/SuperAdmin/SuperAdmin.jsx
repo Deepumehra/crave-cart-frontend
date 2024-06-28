@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { default as AdminNavbar } from "../Admin/AdminNavbar";
+import RestaurantPaymentTable from "./Payments/RestaurantPaymentTable";
 import RestaurantRequest from "./RestaurantRequest/RestaurantRequest";
 import SuperAdminRestaurant from "./Restaurants/SuperAdminRestaurant";
 import Customers from "./SuperAdminCustomerTable/Customers";
 import SuperAdminSidebar from './SuperAdminSideBar';
-
 const SuperAdmin = () => {
   const [openSideBar, setOpenSideBar] = useState(false);
   const sidebarRef = useRef(null);
@@ -42,6 +42,7 @@ const SuperAdmin = () => {
           <Routes>
             <Route path="/restaurants" element={<SuperAdminRestaurant />} />
             <Route path="/customers" element={<Customers />} />
+            <Route path="/payment" element={<RestaurantPaymentTable/>}/>
             <Route path="/restaurant-request" element={<RestaurantRequest />} />
           </Routes>
         </div>
