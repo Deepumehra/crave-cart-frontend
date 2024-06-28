@@ -1,4 +1,5 @@
 import AddCircleIcon from '@mui/icons-material/AddCircle';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import HomeIcon from '@mui/icons-material/Home';
 import LogoutIcon from "@mui/icons-material/Logout";
 import ShopTwoIcon from "@mui/icons-material/ShopTwo";
@@ -16,7 +17,8 @@ const menu = [
   {title:"Home", icon:<HomeIcon/>,path:'/home'},
   { title: "Restaurants", icon: <ShoppingBagIcon />, path: "/restaurants"},
   { title: "Customers", icon: <ShopTwoIcon />, path: "/customers"},
-  { title: "Restaurant Request", icon: <AddCircleIcon />, path: "/restaurant-request"},
+  { title: "Orders", icon: <AddCircleIcon />, path: "/restaurant-request"},
+  { title:"Payments ",icon:<AttachMoneyIcon/> , path:"/payment"},
   { title: "Logout", icon: <LogoutIcon />, path: "/"},
 ];
 export default function SuperAdminSidebar({ handleClose, open }) {
